@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/naaavvikoko"
+    app:startDestination="@id/launchhhhFragment">
+
+    <fragment
+        android:id="@+id/launchhhhFragment"
+        android:name="com.superking.parch.LaunchhhhFragment"
+        android:label="fragment_launchhhh"
+        tools:layout="@layout/fragment_launchhhh" >
+        <action
+            android:id="@+id/action_launchhhhFragment_to_phoootosFragment"
+            app:destination="@id/phoootosFragment" />
+        <action
+            android:id="@+id/action_launchhhhFragment_to_gaaamerFragment"
+            app:destination="@id/gaaamerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gaaamerFragment"
+        android:name="com.superking.parch.GaaamerFragment"
+        android:label="fragment_gaaamer"
+        tools:layout="@layout/fragment_gaaamer" >
+        <action
+            android:id="@+id/action_gaaamerFragment_to_reeeeeloadFragment"
+            app:destination="@id/reeeeeloadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoootosFragment"
+        android:name="com.superking.parch.PhoootosFragment"
+        android:label="fragment_phoootos"
+        tools:layout="@layout/fragment_phoootos" />
+    <fragment
+        android:id="@+id/reeeeeloadFragment"
+        android:name="com.superking.parch.ReeeeeloadFragment"
+        android:label="fragment_reeeeeload"
+        tools:layout="@layout/fragment_reeeeeload" >
+        <action
+            android:id="@+id/action_reeeeeloadFragment_to_launchhhhFragment"
+            app:destination="@id/launchhhhFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/launchhhhFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

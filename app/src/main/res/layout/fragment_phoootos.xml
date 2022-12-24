@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bbbackg"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PhoootosFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gtgttggtddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sssssss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/kikiikikikik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/kiikikkiikik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/jujikikikikiik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/jujuujgggfgg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/grgttgffffgtgttg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gtgtgtvvbbnmm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gtgthyjuikik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_photo_gallery"
+        android:layout_width="0dp"
+        android:padding="3dp"
+        android:textColor="#FBD4D4"
+        android:textAllCaps="true"
+        android:fontFamily="@font/montserrat_black"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="epic moments"
+        app:layout_constraintBottom_toBottomOf="@id/sssssss"
+        app:layout_constraintEnd_toStartOf="@id/btn_img_exit"
+        app:layout_constraintStart_toStartOf="@id/gtgthyjuikik"
+        app:layout_constraintTop_toTopOf="@id/kikiikikikik" />
+
+    <ImageView
+        android:id="@+id/btn_img_exit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_baseline_exit_to_app_24"
+        app:layout_constraintBottom_toBottomOf="@id/sssssss"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintEnd_toEndOf="@id/gtgtgtvvbbnmm"
+        app:layout_constraintTop_toTopOf="@id/kikiikikikik" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@id/gtgtgtvvbbnmm"
+        app:layout_constraintStart_toStartOf="@id/gtgthyjuikik"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_photo_gallery" />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/circle_indicator_photo_galery"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:pointerIcon="arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pager" />
+
+    <ScrollView
+        android:id="@+id/scroll_v_for_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/jujuujgggfgg"
+        app:layout_constraintEnd_toEndOf="@id/gtgtgtvvbbnmm"
+        app:layout_constraintStart_toStartOf="@id/gtgthyjuikik"
+        app:layout_constraintTop_toBottomOf="@id/circle_indicator_photo_galery">
+
+        <TextView
+            android:id="@+id/tv_photos_photo_gallery_short"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Aviator was founded in December 2010 when Aviator acquired the Swedish company Nordic Aero, and the two Norwegian companies Røros Flyservice and Norport Ground Handling. With decades of experience in the European ground handling market, and a constantly growing offering of aviation services, Aviator is the largest independent ground handling company in the Nordics.
+
+Aviator is a Nordic one-stop shop for aviation services. We are a full-range provider of aviation services, taking care of passengers and equipment at 15 airports from Copenhagen to Tromsö. We guarantee high quality and stable service throughout the Nordic region and can meet all your support service needs, from passenger and baggage handling through de-icing, cargo and full freight handling to station services, including airport security and the NORDIC DINO Aircraft Washing Robot.
+
+Aviator had a turnover of approximately €150m in 2019 and actively employs more than 2,200 personnel.
+
+Since joining Avia Solutions Group Aviator has been closely in partnership with BGS (ground handling company, operating across Eastern and Central Europe). Aviator in cooperation BGS operates in 25 airports located in 10 countries, offering ground handling, liquid ADR logistics, de-icing, executive services, aircraft washing solutions, as well as aircraft fueling, cargo handling, training.
+
+With our dedication to efficiency, safety and innovation and with our commitment to delivering high quality service on time we aim to be a global leader in aviation services. "
+            android:textColor="#FBD4D4"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

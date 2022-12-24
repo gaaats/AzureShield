@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bbbackg"
+    android:layout_height="match_parent"
+    tools:context=".LaunchhhhFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_95gttggttg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gttggtgt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gtgthhyyhhyhy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hujgfggggg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gtgttghydddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <ImageView
+        android:id="@+id/img_titple_gamefrrfr"
+        android:layout_width="220dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_height="220dp"
+        android:rotation="12"
+        android:scaleType="centerInside"
+        android:src="@drawable/airplane_good"
+        app:layout_constraintBottom_toTopOf="@id/easy"
+        app:layout_constraintEnd_toEndOf="@id/hujgfggggg"
+        app:layout_constraintStart_toStartOf="@id/gtgthhyyhhyhy"
+        app:layout_constraintTop_toTopOf="@id/gtgttghydddd" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/easy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_black"
+        android:text="easy"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/normal"
+        app:layout_constraintEnd_toEndOf="@id/hujgfggggg"
+        app:layout_constraintStart_toStartOf="@id/gtgthhyyhhyhy"
+        app:layout_constraintTop_toBottomOf="@id/img_titple_gamefrrfr"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_black"
+        android:text="normal"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/hard"
+        app:layout_constraintEnd_toEndOf="@id/hujgfggggg"
+        app:layout_constraintStart_toStartOf="@id/gtgthhyyhhyhy"
+        app:layout_constraintTop_toBottomOf="@id/easy"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_black"
+        android:text="hard"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/superman"
+        app:layout_constraintEnd_toEndOf="@id/hujgfggggg"
+        app:layout_constraintStart_toStartOf="@id/gtgthhyyhhyhy"
+        app:layout_constraintTop_toBottomOf="@id/normal"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/superman"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_black"
+        android:text="superman"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/img_photos"
+        app:layout_constraintEnd_toEndOf="@id/hujgfggggg"
+        app:layout_constraintStart_toStartOf="@id/gtgthhyyhhyhy"
+        app:layout_constraintTop_toBottomOf="@id/hard"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/img_photos"
+        android:layout_width="60dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/picture"
+        app:layout_constraintTop_toBottomOf="@id/superman"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_hor_95gttggttg"
+        app:layout_constraintEnd_toEndOf="@id/hujgfggggg"
+        app:layout_constraintStart_toStartOf="@id/gtgthhyyhhyhy" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
